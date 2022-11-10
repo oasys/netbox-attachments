@@ -15,7 +15,7 @@ def attachments_panel(self):
                                               model=model).id
 
     return self.render(
-        'netbox_attachments/netbox_attachment_panel.html',
+        'netbox_attachment_panel.html',
         extra_context={
             'netbox_attachments': NetBoxAttachment.objects.filter(content_type_id=content_type_id,
                                                                   object_id=obj.id),
